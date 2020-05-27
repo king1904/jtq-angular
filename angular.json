@@ -27,9 +27,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/theme.scss",
+              "node_modules/@covalent/core/common/platform.css"
             ],
-            "scripts": [],
+            "scripts": [ "node_modules/hammerjs/hammer.min.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -86,7 +88,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [ "node_modules/hammerjs/hammer.min.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -136,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "angular"
+  "defaultProject": "angular",
+  "cli": {
+    "packageManager": "yarn"
+  }
 }
